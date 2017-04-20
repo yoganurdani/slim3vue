@@ -1,0 +1,116 @@
+/* ===============================
+ * This file contains site wide styling.
+ * =============================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+// Hides body whilst TypeKit is loading
+.wf-loading {
+  opacity: 0;
+}
+
+// Show once TypeKit has loaded
+.wf-active {
+  opacity: 1;
+}
+
+// Some nice <pre> styling for your development needs
+pre {
+  background: $alt;
+  padding: 20px;
+  margin: 20px 0;
+  color: white;
+  border: solid 2px darken($alt, 10%);
+  white-space: pre-wrap;
+
+  &:before {
+    content: "If you can see this, don't panic. We use it to help us get stuff done! Thanks, Alt.";
+    display: block;
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-bottom: 40px;
+  }
+}
+
+
+/*general*/
+
+.p-1-rem{
+    padding: 1rem;
+}
+.p-t-1-rem{
+    padding-top: 1rem;
+}
+.p-15{
+    padding: 15px;
+}
+.m-r-5{
+    margin-right: 5px;
+}
+
+.size-1	{
+    font-size:3rem;
+}
+.size-2	{
+    font-size:2.5rem;
+}
+.size-3	{
+    font-size:2rem;
+}
+.size-4	{
+    font-size:1.5rem;
+}
+.size-5	{
+    font-size:1.25rem;
+}
+.size-6	{
+    font-size:1rem;
+}
+.size-7	{
+    font-size:0.75rem;
+}
+.weight-light{
+    font-weight: 300;
+}
+.weight-normal{
+    font-weight: 400;
+}
+.weight-semibold{
+    font-weight: 500;
+}
+.weight-bold{
+    font-weight: 700;
+}
+
+html, body, nav, nav.nav{
+    background-color : #fcfdfe;
+}
+
+figure{
+    margin: 0px;
+}
+
+.font-medium, .content h1.font-medium{
+    font-weight: 500;
+}
+
+.font-italic{
+    font-style: italic;
+}
+
+@media screen and (max-width: 999px) and (min-width: 769px){
+    .container {
+        width: 100%;
+    }
+    .nav-menu {
+        padding-right: 0rem;
+    }
+    
+}
